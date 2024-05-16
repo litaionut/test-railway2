@@ -1,1 +1,1 @@
-web: gunicorn test_railway2.wsgi --log-file -
+web: python manage.py migrate && gunicorn test_railway2.wsgi
